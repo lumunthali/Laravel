@@ -1,7 +1,4 @@
 <?php
-$marks = 98;
-$student = array("Mateyu", "Phillip", "Moses", "John", "Jane");
-
 
 ?>
 <!DOCTYPE html>
@@ -13,34 +10,17 @@ $student = array("Mateyu", "Phillip", "Moses", "John", "Jane");
 </head>
 <body>
     
-<h1> About user </h1>
-<p>
-<?php
-if($marks>80) {
-    echo "Distinction <br>";
-}
-else if($mark>=70) {echo "This is credit";
-}
-    else
-    {echo "failed";
-    }
-
-    foreach($student as $index => $name){
-    echo "student $index: $name<br>";
-}
-echo "<table boarder='1'>";
-echo "<tr> <th>Index</th><th>Name</th></tr>";
-
-foreach($student as $key => $val){
-    echo "<tr><td>" . ($key+1) . "</td> <td>" . $val . "</td></tr>";
-
-}
-echo "</table>";
-?>
+<form action="submit.php" method="POST">
+    <label for="Intro">Personal Information:</label><br>
+    <input type="text" name="username" required><br>
+    <input type="text" name="age" required><br>
+<input type="text" name="email" required><br>
+ <button type="submit">submit</button><br>
 
 
 
-</p>
+
+
     
 </body>
 </html>
