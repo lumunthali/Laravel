@@ -1,5 +1,13 @@
 <?php
-$name = $_POST['username'];
-$age = $_POST['age'];
-$email = $_POST['email'];
-echo "your name is $name, your age is $age, your email is $email";
+
+session_start();
+
+$_SESSION['username'] = $_POST['username'];
+$_SESSION['age'] = $_POST['age'];
+$_SESSION['email'] = $_POST['email'];
+
+echo "your name is " . $_SESSION['username'] . " and your age is" .
+$_SESSION['age']
+
+
+?>
