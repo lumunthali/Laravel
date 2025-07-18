@@ -4,7 +4,7 @@ class Student {
     public $age;
     public $gender;
     
-    public function _ construct($name, $age, $gender);
+    public function _ construct($name, $age, $gender)
 
 $this->name = $name;
 $this->age = $age;
